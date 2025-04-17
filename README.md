@@ -37,7 +37,7 @@
 2. **Launch the frontend**  
    ```bash   
    npm install  
-   npm start  # Runs at http://localhost:3000  
+   npm run dev  # Runs at http://localhost:3000  
    ```  
 
 3. **Access the demo**  
