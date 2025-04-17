@@ -113,7 +113,7 @@ const Dashboard = () => {
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="animate-on-scroll">
       <div className="flex justify-between items-center mb-6">
-        <h3 className="text-3xl font-bold text-white">Insurance Claims Explorer</h3>
+        <h3 className="text-3xl font-bold text-white">Seller Data Explorer</h3>
         <a href="#dashboard" className="px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white text-sm font-medium rounded-lg transition-all duration-200 flex items-center">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -123,7 +123,7 @@ const Dashboard = () => {
       </div>
       
       <p className="max-w-3xl text-lg text-gray-300 mb-8">
-        Browse our comprehensive dataset containing 1,000 insurance claims with detailed analytics and insights.
+        Browse our comprehensive dataset containing more than 1,000 seller data with detailed analytics and insights.
       </p>
       
       <div className="bg-slate-800 rounded-xl shadow-xl overflow-hidden mb-10 border border-slate-700">
@@ -138,26 +138,13 @@ const Dashboard = () => {
               </div>
               <input 
                 type="text" 
-                placeholder="Search claims..." 
+                placeholder="Search seller..." 
                 className="bg-slate-900 text-white pl-10 pr-4 py-2 border border-slate-700 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
           </div>
           
           <div className="flex flex-wrap gap-2 w-full lg:w-auto justify-end">
-            <select className="bg-slate-900 text-white px-3 py-2 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-              <option value="">Claim Status</option>
-              <option value="approved">Approved</option>
-              <option value="denied">Denied</option>
-              <option value="pending">Pending</option>
-            </select>
-            
-            <select className="bg-slate-900 text-white px-3 py-2 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-              <option value="">Claim Type</option>
-              <option value="auto">Auto</option>
-              <option value="health">Health</option>
-              <option value="property">Property</option>
-            </select>
             
             <select className="bg-slate-900 text-white px-3 py-2 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
               <option value="10">10 per page</option>
@@ -181,50 +168,6 @@ const Dashboard = () => {
             </button>
           </div>
         </div>
-        
-        {/* Data Visualization Summary */}
-        <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-slate-900 border-b border-slate-700">
-  <div className="bg-slate-800 rounded-lg p-4 border border-slate-700">
-    <div className="text-blue-400 text-sm font-medium mb-1">Total Claims</div>
-    <div className="text-white text-2xl font-bold">1,000</div>
-    <div className="text-red-400 text-xs mt-2 flex items-center">
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-      </svg>
-      Total value: $52.8M
-    </div>
-  </div>
-  <div className="bg-slate-800 rounded-lg p-4 border border-slate-700">
-    <div className="text-blue-400 text-sm font-medium mb-1">Fraudulent Claims</div>
-    <div className="text-white text-2xl font-bold">247</div>
-    <div className="text-red-400 text-xs mt-2 flex items-center">
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-      </svg>
-      24.7% fraud rate
-    </div>
-  </div>
-  <div className="bg-slate-800 rounded-lg p-4 border border-slate-700">
-    <div className="text-blue-400 text-sm font-medium mb-1">Vehicle Claims</div>
-    <div className="text-white text-2xl font-bold">$37.9M</div>
-    <div className="text-green-400 text-xs mt-2 flex items-center">
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
-      </svg>
-      71.8% of total claims
-    </div>
-  </div>
-  <div className="bg-slate-800 rounded-lg p-4 border border-slate-700">
-    <div className="text-blue-400 text-sm font-medium mb-1">Avg. Fraudulent Claim</div>
-    <div className="text-white text-2xl font-bold">$60.3K</div>
-    <div className="text-red-400 text-xs mt-2 flex items-center">
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-      </svg>
-      vs $50.3K non-fraud
-    </div>
-  </div>
-</div>
         
         {/* Data Table */}
         {showDataTable && (
