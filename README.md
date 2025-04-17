@@ -30,8 +30,8 @@
 
 1. **Clone the repository**  
    ```bash  
-   git clone https://github.com/yourusername/claimwise.git  
-   cd claimwise  
+   git clone https://github.com/goyalxatul/frontenddsbi.git  
+   cd frontenddsbi 
    ``` 
 
 2. **Launch the frontend**  
