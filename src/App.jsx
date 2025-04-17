@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Dashboard from './components/Dashboard';
-import Analytics from './components/Analytics';
 import Footer from './components/Footer';
 import Login from './components/Login';
 
@@ -53,7 +52,6 @@ function App() {
             <>
               <Route path="/" element={<Hero />} />
               <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/analytics" element={<Analytics />} />
               <Route path="*" element={<Navigate to="/" />} />
             </>
           )}
