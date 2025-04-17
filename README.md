@@ -17,7 +17,7 @@
 
 | **Category**       | **Technologies**                          |  
 |--------------------|------------------------------------------|  
-| **Frontend**       | React, D3.js, TailwindCSS                |  +              |  
+| **Frontend**       | React, D3.js, TailwindCSS                | 
 | **Machine Learning** | scikit-learn, Pandas, NumPy             |  
 | **Data Viz**       | Plotly, Seaborn, Matplotlib              |  
 | **DevOps**         | Docker, GitHub Actions                   |  

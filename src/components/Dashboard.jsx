@@ -77,7 +77,7 @@ const Dashboard = () => {
             <div className="relative w-full overflow-hidden rounded-lg bg-slate-800 border border-slate-700 shadow-lg" style={{paddingTop: '56.25%'}}>
               <iframe
                 title="Amazon Seller Data Analysis"
-                src="https://app.powerbi.com/reportEmbed?reportId=a56a5dc9-0d79-4943-b144-269101eebd33&autoAuth=true&ctid=23035d1f-133c-44b5-b2ad-b3aef17baaa1"
+                src="https://app.powerbi.com/reportEmbed?reportId=bd7a419b-18ff-48d1-be24-08fa8a466ae7&autoAuth=true&ctid=23035d1f-133c-44b5-b2ad-b3aef17baaa1"
                 frameBorder="0"
                 allowFullScreen
                 className="absolute top-0 left-0 w-full h-full"
