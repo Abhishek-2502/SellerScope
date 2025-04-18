@@ -3,3 +3,4 @@ uvicorn
 pandas==1.4.0
 scikit-learn==1.0.2
 openpyxl
+distutils
