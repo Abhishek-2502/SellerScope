@@ -18,6 +18,7 @@
 | **Category**       | **Technologies**                          |  
 |--------------------|------------------------------------------|  
 | **Frontend**       | React, D3.js, TailwindCSS                | 
+| **Backend**       | FastAPI                                   | 
 | **Machine Learning** | scikit-learn, Pandas, NumPy             |  
 | **Data Viz**       | Plotly, Seaborn, Matplotlib              |  
 | **DevOps**         | Docker, GitHub Actions                   |  
@@ -34,14 +35,22 @@
    cd frontenddsbi 
    ``` 
 
-2. **Launch the frontend**  
+2. **Launch the backend**  
+   ```bash   
+   cd backend
+   pip install requirements.txt
+   uvicorn app:app --reload  # Runs at http://localhost:8000/docs
+   ```  
+   
+3. **Launch the frontend**  
    ```bash   
    npm install  
-   npm run dev  # Runs at http://localhost:3000  
+   npm run dev  # Runs at http://localhost:5173  
    ```  
 
-3. **Access the demo**  
-   Open `http://localhost:3000` to view the dashboards.  
+
+4. **Access the demo**  
+   Open `http://localhost:5173` to view the dashboards.  
 
 ## 📜 License  
 MIT License. See [LICENSE](LICENSE) for details.  
