@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Dashboard from './components/Dashboard';
 import Footer from './components/Footer';
 import Login from './components/Login';
+import PredictionForm from './components/PredictionForm';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -40,23 +41,29 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-900 text-white">
+        {/* Render Navbar if authenticated */}
         {isAuthenticated && <Navbar onLogout={handleLogout} />}
 
-        <Routes>
-          {!isAuthenticated ? (
-            <>
-              <Route path="/login" element={<Login onLogin={handleLogin} />} />
-              <Route path="*" element={<Navigate to="/login" />} />
-            </>
-          ) : (
-            <>
-              <Route path="/" element={<Hero />} />
-              <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="*" element={<Navigate to="/" />} />
-            </>
-          )}
-        </Routes>
+        {/* Content wrapper with padding to avoid overlap */}
+        <div className="pt-20">
+          <Routes>
+            {!isAuthenticated ? (
+              <>
+                <Route path="/login" element={<Login onLogin={handleLogin} />} />
+                <Route path="*" element={<Navigate to="/login" />} />
+              </>
+            ) : (
+              <>
+                <Route path="/" element={<Hero />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/predict" element={<PredictionForm />} /> {/* 👈 New Route */}
+                <Route path="*" element={<Navigate to="/" />} />
+              </>
+            )}
+          </Routes>
+        </div>
 
+        {/* Render Footer if authenticated */}
         {isAuthenticated && <Footer />}
       </div>
     </Router>
