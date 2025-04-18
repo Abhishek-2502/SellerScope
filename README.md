@@ -31,8 +31,8 @@
 
 1. **Clone the repository**  
    ```bash  
-   git clone https://github.com/goyalxatul/frontenddsbi.git  
-   cd frontenddsbi 
+   git clone https://github.com/Abhishek-2502/SellerScope.git  
+   cd SellerScope
    ``` 
 
 2. **Launch the backend**  
@@ -44,6 +44,7 @@
    
 3. **Launch the frontend**  
    ```bash   
+   cd ..
    npm install  
    npm run dev  # Runs at http://localhost:5173  
    ```  
@@ -60,4 +61,4 @@ MIT License. See [LICENSE](LICENSE) for details.
 2. Open an issue to discuss proposed changes.  
 3. Submit a PR with clear documentation.  
 
-**Got questions?** Email `goyalxatul@gmail.com` or open a [GitHub Issue](https://github.com/goyalxatul/frontenddsbi/issues).  
+**Got questions?** Email `abhishek25022004@gmail.com` or open a [GitHub Issue](https://github.com/Abhishek-2502/SellerScope/issues).  
