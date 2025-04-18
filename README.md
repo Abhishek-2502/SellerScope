@@ -37,7 +37,7 @@
 
 2. **Launch the backend**  
    ```bash   
-   cd Backend
+   cd backend
    pip install requirements.txt
    uvicorn app:app --reload  # Runs at http://localhost:8000/docs
    ```  
