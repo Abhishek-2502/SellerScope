@@ -26,7 +26,7 @@ const Dashboard = () => {
     
     // Fetch CSV data when viewing data is enabled
     if (showDataTable) {
-      fetch('/amazon.csv')
+      fetch('/amazon_dummy.csv')
         .then(response => response.text())
         .then(csvText => {
           const rows = csvText.split('\n');
