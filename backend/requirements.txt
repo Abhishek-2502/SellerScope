@@ -1,5 +1,5 @@
 fastapi
 uvicorn
-pandas==1.4.4
-scikit-learn==1.5.2
-openpyxl==3.1.5
+pandas
+scikit-learn
+openpyxl
